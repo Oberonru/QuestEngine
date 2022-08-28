@@ -1,0 +1,59 @@
+{
+    "name": "start quest",
+    "scenes": [{
+        "id": 1,
+        "description": "Добро пожаловать, рейнджер!",
+        "image": "https://blabla.gpg",
+        "type": "start",
+        "transitions": [{
+            "target": 2,
+            "maxTransitions": 5,
+            "text": "ты переходишь на корабль..."
+        },
+        {
+            "target": 3,
+            "maxTransitions": 5,
+            "text": "ты переходишь на чердак..."
+        }]
+    },
+    {
+        "id": 2,
+        "description": "Сцена с кораблем!",
+        "image": "https://muholet.gpg",
+        "type": "intermediate",
+        "transitions": [{
+            "target": 3,
+            "maxTransitions": 5,
+            "text": "ты переходишь, побег"
+        },
+        {
+            "target": 2,
+            "maxTransitions": 5,
+            "text": "ты переходишь в тюрягу"
+        }]
+    },
+    {
+        "id": 3,
+        "description": "Тюряга!",
+        "image": "https://muholet.gpg",
+        "type": "intermediate",
+        "transitions": [{
+            "target": 4,
+            "maxTransitions": 5,
+            "text": "побег...."
+        },
+        {
+            "target": 2,
+            "maxTransitions": 5,
+            "text": "по этапу..."
+        }]
+    },
+    {
+        "id": 4,
+        "description": "Конец",
+        "image": "https://muholet.gpg",
+        "type": "end",
+        "transitions": []
+    }
+]
+}
